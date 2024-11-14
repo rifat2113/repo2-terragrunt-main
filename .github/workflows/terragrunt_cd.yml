@@ -55,6 +55,9 @@ jobs:
       
     - name: Terragrunt Validate
       run: terragrunt validate
+    - name: Install Tflint  # New Tflint installation step
+      run: |
+          go install github.com/terraform-linters/tflint@latest
       
     - name: Tflint  init
       run: tflint --init
