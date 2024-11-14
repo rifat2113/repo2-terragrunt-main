@@ -27,7 +27,7 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Azure Login using OIDC
-      uses: Azure/login@v2.2
+      uses: Azure/login@v2.2.0
       env:
         AZURE_LOGIN_PRE_CLEANUP: false
         AZURE_LOGIN_POST_CLEANUP: false
