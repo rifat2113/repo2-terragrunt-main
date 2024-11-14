@@ -55,10 +55,13 @@ jobs:
       
     - name: Terragrunt Validate
       run: terragrunt validate
-    - name: Install Tflint  # New Tflint installation step
-      run: |
-          go install github.com/terraform-linters/tflint@latest
-          export PATH=$PATH:/usr/bin/bash
+    # - name: Install Tflint  # New Tflint installation step
+    #   run: |
+    #       go install github.com/terraform-linters/tflint@latest
+    #       export PATH=$PATH:/usr/bin/bash
+    - uses: terraform-linters/setup-tflint@v4
+      with:
+          tflint_version: v0.52.0  # Adjust version as needed
       
     - name: Tflint  init
       run: tflint --init
