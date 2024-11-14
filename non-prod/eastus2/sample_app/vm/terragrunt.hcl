@@ -3,20 +3,20 @@ include "root" {
 }
 
 terraform {
-    source = "git::https://github.com/akashmishra24/repo1-tfmodules.git//azurerm_vm"
+    source = "git::https://github.com/rifat2113/repo1-tfmodules/tree/main/repo1-tfmodules-main/azurerm_vm"
 }
 
 inputs = {
-  resource_group_name  = "rg-iac-cox-poc-01"
+  resource_group_name  = "Terragrunt-demo"
   location             = "East US 2"
-  virtual_network_name = "rg-iac-cox-poc-01-vnet"
+  virtual_network_name = "terragrunt-vnet"
   subnet_name          = "gitrunner-subnet"
   virtual_machine_name = "vm-linux"
   key_vault_name       = "kv-eus-poc-iac-01"
   key_vault_rg_name    = "rg-iac-cox-poc-01"
   key_vault_key_name   = "cmk-0101"
   storage_account_name = "tfstatedemo1"
-  storage_rg           = "rg-iac-cox-poc-01"
+  storage_rg           = "rg-iac-poc-01"
   os_flavor            = "linux"
   # windows_distribution_name = "windows2019dc"
   linux_distribution_name = "ubuntu2004"
