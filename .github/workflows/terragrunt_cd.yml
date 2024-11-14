@@ -58,6 +58,7 @@ jobs:
     - name: Install Tflint  # New Tflint installation step
       run: |
           go install github.com/terraform-linters/tflint@latest
+          export PATH=$PATH:/usr/bin/bash
           which tflint 
       
     - name: Tflint  init
