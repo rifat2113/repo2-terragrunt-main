@@ -4,15 +4,15 @@ include "root" {
 # Change
 
 terraform {
-    source = "git::https://github.com/akashmishra24/repo1-tfmodules.git//storage_account_module"
+    source = "git::https://github.com/rifat2113/repo1-tfmodules/tree/main/repo1-tfmodules-main/storage_account_module"
 }
 
 inputs = {
-  resource_group_name = "rg-iac-cox-poc-01"
+  resource_group_name = "Terragrunt-demo"
 
 storage_accounts = {
   atstftststorageacct = {
-    name         = "atstftststorageacct",
+    name         = "terragruntartifact123",
     sku          = "Standard_LRS",
     account_kind = "StorageV2",
     access_tier  = "Hot",
@@ -28,13 +28,13 @@ storage_accounts = {
 }
 
 tags = {
-  "date" = "12/29/2022"
+  "date" = "14/11/2024"
 }
 
 containers = {
   tfTstStorageContainer = {
-    name                  = "tftststoragecontainer",
-    storage_account_name  = "atstftststorageacct",
+    name                  = "terragruntartifact123container",
+    storage_account_name  = "terragruntartifact123",
     container_access_type = "container"
   }
 }
