@@ -37,7 +37,7 @@ jobs:
       with:
           azcliversion: latest
           inlineScript: |
-            az login
+            az account show
     - name: Install Terragrunt
       run: |
         curl -fsSL https://github.com/gruntwork-io/terragrunt/releases/download/v0.44.1/terragrunt_linux_amd64 -o terragrunt
@@ -59,7 +59,6 @@ jobs:
       run: |
           go install github.com/terraform-linters/tflint@latest
           export PATH=$PATH:/usr/bin/bash
-          which tflint 
       
     - name: Tflint  init
       run: tflint --init
