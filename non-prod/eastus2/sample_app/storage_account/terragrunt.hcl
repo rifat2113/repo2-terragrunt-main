@@ -4,7 +4,7 @@ include "root" {
 # Change
 
 terraform {
-    source = "git::https://github.com/rifat2113/repo1-tfmodules/repo1-tfmodules-main//storage_account_module"
+    source = "git::https://github.com/rifat2113/repo1-tfmodules//storage_account_module"
 }
 
 inputs = {
