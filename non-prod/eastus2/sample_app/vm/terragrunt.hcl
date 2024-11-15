@@ -7,7 +7,7 @@ terraform {
 }
 
 inputs = {
-  resource_group_name  = "Terragrunt-demo"
+  resource_group_name  = "azurevm"
   location             = "East US 2"
   virtual_network_name = "VM1-vnet"
   subnet_name          = "defualt"
@@ -15,8 +15,8 @@ inputs = {
   key_vault_name       = "kv-eus-poc-iac-01"
   key_vault_rg_name    = "azurevm"
   key_vault_key_name   = "cmk-0101"
-  storage_account_name = "tfstatedemo1"
-  storage_rg           = "rg-iac-poc-01"
+  storage_account_name = "tfstatedemo12"
+  storage_rg           = "azurevm"
   os_flavor            = "linux"
   # windows_distribution_name = "windows2019dc"
   linux_distribution_name = "ubuntu2004"
