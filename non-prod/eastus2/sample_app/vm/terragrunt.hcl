@@ -3,7 +3,7 @@ include "root" {
 }
 
 terraform {
-    source = "git::https://github.com/rifat2113/repo1-tfmodules/tree/main/repo1-tfmodules-main/azurerm_vm"
+    source = "git::https://github.com/rifat2113/repo1-tfmodules/repo1-tfmodules-main//azurerm_vm"
 }
 
 inputs = {
