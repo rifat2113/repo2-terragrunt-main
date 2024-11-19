@@ -4,7 +4,7 @@ include "root" {
 # Change
 
 terraform {
-    source = "git::https://github.com/rifat2113/repo1-tfmodules//VMSS-Windows"
+    source = "git::https://github.com/rifat2113/repo1-tfmodules//terraform-azurerm-avm-res-compute-virtualmachinescaleset-main//examples//autoscale-windows"
 }
 
 inputs = {
