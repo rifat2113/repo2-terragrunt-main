@@ -4,7 +4,7 @@ include "root" {
 # Change
 
 terraform {
-    source = "git::https://github.com/rifat2113/repo1-tfmodules//VirtualNetwork"
+    source = "git::https://github.com/rifat2113/repo1-tfmodules//VMSS-Windows"
 }
 
 inputs = {
