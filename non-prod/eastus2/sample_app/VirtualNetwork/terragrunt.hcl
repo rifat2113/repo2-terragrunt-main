@@ -8,7 +8,7 @@ terraform {
 }
 
 inputs = {
- location               = "<azure region>"
+ location               = "East US 2"
 address_space_start_ip = "10.0.0.0"
 address_space_size     = 16
 subnets = {
