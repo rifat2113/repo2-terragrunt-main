@@ -10,7 +10,7 @@ generate "providers" {
       required_providers {
         azurerm = {
           source = "hashicorp/azurerm"
-          version = "3.30.0"
+          version = "4.10.0"
         }
         azuread = {
           source = "hashicorp/azuread"
