@@ -28,13 +28,7 @@ subnets = {
     has_network_security_group = false
   }
 }
-tags = {
-  type = "avm"
-  env  = "demo"
-}
 }
 
-tags = {
-  "date" = "14/11/2024"
-}
+
 
