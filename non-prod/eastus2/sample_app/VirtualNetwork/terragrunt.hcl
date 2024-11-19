@@ -4,7 +4,7 @@ include "root" {
 # Change
 
 terraform {
-    source = "Azure/avm-res-network-virtualnetwork/azurerm"
+    source = "git::https://github.com/rifat2113/repo1-tfmodules//VirtualNetwork"
 }
 
 inputs = {
