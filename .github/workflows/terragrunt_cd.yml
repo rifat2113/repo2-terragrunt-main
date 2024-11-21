@@ -91,7 +91,8 @@ jobs:
         ARM_TENANT_ID: ${{ secrets.AZURE_AD_TENANT_ID }}
         ARM_USE_OIDC: true 
       run: terragrunt run-all apply --terragrunt-non-interactive
-    - name: Terragrunt Apply
+      
+    - name: Terragrunt Destroy
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
       env:
         ARM_CLIENT_ID: ${{ secrets.AZURE_AD_CLIENT_ID }}
