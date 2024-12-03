@@ -9,8 +9,8 @@ terraform {
 inputs = {
   resource_group_name  = "azurevm"
   location             = "East US 2"
-  virtual_network_name = "VM1-vnet"
-  subnet_name          = "Subnet-terragrunt"
+  virtual_network_name = "Terragrunt-vnet"
+  subnet_name          = "subnet-terragrunt"
   virtual_machine_name = "vm-linux"
   key_vault_name       = "kv-eus-poc-iac-01"
   key_vault_rg_name    = "azurevm"
