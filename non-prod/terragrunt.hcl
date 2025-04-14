@@ -17,7 +17,7 @@ generate "providers" {
           version = "2.31.0"
         }
       }
-      required_version = ">= 1.1.0"
+      required_version = ">= 1.9.2"
     }
     provider "azurerm" {
         features {}
