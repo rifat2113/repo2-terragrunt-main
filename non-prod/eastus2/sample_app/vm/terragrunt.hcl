@@ -7,8 +7,8 @@ terraform {
 }
 
 inputs = {
-  resource_group_name  = "azurevm"
-  location             = "East US 2"
+  resource_group_name  = "Terragrunt"
+  location             = "East US"
   virtual_network_name = "Terragrunt-vnet"
   subnet_name          = "subnet-terragrunt"
   virtual_machine_name = "vm-linux"
