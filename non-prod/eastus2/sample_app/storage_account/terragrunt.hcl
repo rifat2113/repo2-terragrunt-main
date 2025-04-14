@@ -8,7 +8,7 @@ terraform {
 }
 
 inputs = {
-  resource_group_name = "Terragrunt-demo"
+  resource_group_name = "Terragrunt"
 
 storage_accounts = {
   atstftststorageacct = {
