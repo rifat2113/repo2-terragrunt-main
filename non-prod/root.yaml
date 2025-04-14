@@ -1,5 +1,5 @@
 TF_VAR_subscription_id: "fd18d592-b5bd-4a5c-80cd-9ed3f6d8e16a"
-TF_VAR_resource_group_name: "azurevm"
+TF_VAR_resource_group_name: "Terragrunt"
 TF_VAR_storage_account_name: "tfstatedemo12"
 TF_VAR_container_name: "tfstate"
 TF_VAR_tenant_id: "e85103ad-4e4b-4bb5-96d3-789286dc2358"
